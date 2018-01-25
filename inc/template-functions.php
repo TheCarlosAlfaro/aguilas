@@ -30,3 +30,10 @@ function aguilas_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'aguilas_pingback_header' );
+
+// Responsive Video Embed Code
+add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 3);
+
+function wrap_embed_with_div( $html, $url, $attr ) {
+	return "<div class=\"responsive-container\">" . $html . "</div>";
+}
