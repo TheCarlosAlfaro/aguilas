@@ -54,4 +54,5 @@ get_header(); ?>
 <div class="col-md-4">
 	<?php get_sidebar(); ?>
 </div>
-<?php get_footer();
+<?php
+get_footer();
