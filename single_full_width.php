@@ -1,7 +1,7 @@
 <?php
 /**
- * The template for displaying all single posts
- *
+ * Template Name: Full Width Template
+ * Template Post Type: post
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package Aguilas
@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col-md-8">
+	<div id="primary" class="content-area col-md-12">
 		<main id="main" class="site-main">
 
 		<?php
@@ -30,7 +30,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div class="col-md-4">
-		<?php get_sidebar(); ?>
-	</div>
-	<?php get_footer();
+	<?php
+	get_footer();
