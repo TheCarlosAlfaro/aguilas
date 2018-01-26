@@ -42,24 +42,49 @@ function aguilas_customize_register( $wp_customize ) {
 		'priority' => 3
 	));
 
-	$wp_customize->add_setting('btn_url', array(
+	// Home Hero Buttons
+	// Home Hero Button #1
+	$wp_customize->add_setting('btn1_url', array(
 		'default' => _x('#', 'aguilas'),
 		'type' => 'theme_mod'
 	));
-	$wp_customize->add_control('btn_url', array(
-		'label' => __('Button URL', 'aguilas'),
+	$wp_customize->add_control('btn1_url', array(
+		'label' => __('Button 1 URL', 'aguilas'),
 		'section' => 'home_hero',
 		'priority' => 4
 	));
-	$wp_customize->add_setting('btn_text', array(
+	$wp_customize->add_setting('btn1_text', array(
 		'default' => _x('Get it now!', 'aguilas'),
 		'type' => 'theme_mod'
 	));
-	$wp_customize->add_control('btn_text', array(
-		'label' => __('Button Text', 'aguilas'),
+	$wp_customize->add_control('btn1_text', array(
+		'label' => __('Button 1 Text', 'aguilas'),
 		'section' => 'home_hero',
 		'priority' => 5
 	));
+
+	// Home Hero Button #2
+	$wp_customize->add_setting('btn2_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('btn2_url', array(
+		'label' => __('Button 2 URL', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 4
+	));
+	$wp_customize->add_setting('btn2_text', array(
+		'default' => _x('Learn more', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('btn2_text', array(
+		'label' => __('Button 2 Text', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 5
+	));
+
+
+	// Home Hero Image
 
 	$wp_customize->add_setting('home_hero_image', array(
 		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
