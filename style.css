@@ -642,6 +642,17 @@ object {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
+	max-width: 30%;
+}
+
+.navbar-brand {
+    padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar {
+	padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 .responsive-container {
