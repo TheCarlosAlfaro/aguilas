@@ -15,6 +15,66 @@ function aguilas_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+
+	// Home Hero section
+    $wp_customize->add_section('home_hero', array(
+		'title' => __('Home Hero', 'aguilas'),
+		'description' => sprintf(__('Options for Home Hero', 'aguilas')),
+		'priority' => 130
+	));
+	$wp_customize->add_setting('home_hero_heading', array(
+		'default' => _x('Aguilas Theme', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_hero_heading', array(
+		'label' => __('Heading', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 2
+	));
+
+	$wp_customize->add_setting('home_hero_text', array(
+		'default' => _x('The official WordPress theme for Aguilas Centro Familiar Cristiano.', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('home_hero_text', array(
+		'label' => __('Text', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 3
+	));
+
+	$wp_customize->add_setting('btn_url', array(
+		'default' => _x('#', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('btn_url', array(
+		'label' => __('Button URL', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 4
+	));
+	$wp_customize->add_setting('btn_text', array(
+		'default' => _x('Get it now!', 'aguilas'),
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control('btn_text', array(
+		'label' => __('Button Text', 'aguilas'),
+		'section' => 'home_hero',
+		'priority' => 5
+	));
+
+	$wp_customize->add_setting('home_hero_image', array(
+		'default' => get_bloginfo('template_directory').'/img/showcase.jpg',
+		'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_hero_image', array(
+		'label' => __('Home Hero Image', 'aguilas'),
+		'section' => 'home_hero',
+		'settings' => 'home_hero_image',
+		'priority' => 1
+	)));
+
+	// --------------
+
+
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
