@@ -1,6 +1,6 @@
-<div id="primary" class="content-area">
+<div id="home-hero" class="content-area">
     <main id="main" class="site-main">
-
+<!-- Jumbotron for front-page -->
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Aguilas Theme</h1>
@@ -12,5 +12,5 @@
             </div>
         </section>
 
-    </main><!-- #main -->
-</div><!-- #primary -->
+    </main>
+</div>

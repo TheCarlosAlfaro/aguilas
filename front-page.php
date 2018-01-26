@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-<?php get_template_part('parts/jumbotron'); ?> <!-- Jumbotron for front-page -->
+<?php get_template_part('parts/jumbotron'); ?>
 
 <?php
 get_footer();

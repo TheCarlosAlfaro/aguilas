@@ -11,8 +11,6 @@
 
 ?>
 
-	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer row" role="contentinfo">
 		<div class="site-info col-md-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aguilas' ) ); ?>"><?php
@@ -23,7 +21,6 @@
 				<a href="<?php echo esc_url( __( 'https://www.aguilascfc.org/aguilas-theme/', 'aguilas' ) ); ?>"><?php printf( esc_html__( 'Aguilas Theme By: %s', 'aguilas' ), 'Aguilas Centro Familiar Cristiano' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
