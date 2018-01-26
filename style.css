@@ -37,7 +37,27 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Media
 	## Captions
 	## Galleries
+# Sections
 --------------------------------------------------------------*/
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+*, ::before, ::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -156,10 +176,6 @@ h1.site-title, p.site-title {
 	font-size: 16px;
 	margin: 10px 0 0;
 	letter-spacing: 1px;
-}
-
-#masthead {
-	margin-bottom: 30px;
 }
 
 ul, ol {
@@ -716,3 +732,7 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/

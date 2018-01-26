@@ -21,11 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site container">
+<div class="container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aguilas' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<nav id="menu" class="navbar navbar-expand-md navbar-light" role="navigation">
+
 			<div class="site-branding navbar-brand">
 				<?php
 				the_custom_logo();
@@ -61,7 +62,8 @@
 				]);
 			?>
 		</nav>
-
 	</header><!-- #masthead -->
+</div>
 
-	<div id="content" class="site-content row">
+<div id="page" class="site">
+	<div id="content" class="site-content">
