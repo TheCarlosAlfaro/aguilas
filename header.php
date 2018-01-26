@@ -18,6 +18,12 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<style>
+		.jumbotron{
+			background: url(<?php echo get_theme_mod('home_hero_image', get_bloginfo('template_url').'/img/showcase.jpg') ?>) no-repeat center center;
+			background-size: 100%;
+		}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
