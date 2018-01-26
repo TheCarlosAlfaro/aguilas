@@ -642,7 +642,7 @@ object {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
-	max-width: 30%;
+	max-width: 100%;
 }
 
 .navbar-brand {
@@ -650,9 +650,21 @@ object {
 	padding-bottom: 0;
 }
 
+.site-branding, .navbar-brand {
+	max-width: 100px;
+}
+
 .navbar {
 	padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+}
+
+.nav-container {
+	background-color: #fff;
+}
+
+.jumbotron-heading {
+	font-size: 4rem;
 }
 
 .responsive-container {
